@@ -11,7 +11,9 @@
 <script src="./Qgis2threejs.js"></script>
 </head>
 <body>
-<div id="view">
+<table>
+<tr><h1>TEST</h1></tr>
+<tr><div id="view">
   <div id="labels"></div>
   <div id="northarrow"></div>
 </div>
@@ -87,7 +89,7 @@
 
 <!-- footer -->
 <div id="footer"><span id="infobtn"><img src="./Qgis2threejs.png"></span> </div>
-<h1>Test</h1>
+
 <script>
 Q3D.Config.allVisible = true;
 
@@ -108,5 +110,6 @@ app.loadJSONFile("./data/index/scene.json", function () {
 
 document.getElementById("infobtn").onclick = app.showInfo.bind(app);
 </script>
+</tr></table>
 </body>
 </html>
